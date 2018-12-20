@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_56">
+
+        <!--Add ImageView-->
+        <ImageView
+            android:id="@+id/addImage"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/dp_8"
+            android:contentDescription="@string/img_des"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toTopOf="@id/edtInsuranceCode"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!--Insurance Code-->
+        <phuthotech.vn.hospital.custom.MyEditText
+            android:id="@+id/edtInsuranceCode"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edt_height"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@drawable/radius_white"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22"
+            android:elevation="@dimen/dp_2"
+            android:hint="@string/txt_heath_insurance_number"
+            app:layout_constraintBottom_toTopOf="@id/frameFromDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addImage" />
+
+
+        <!--From Date-->
+        <RelativeLayout
+            android:id="@+id/frameFromDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_6"
+            android:elevation="@dimen/dp_2"
+            android:background="@drawable/radius_white"
+            app:layout_constraintBottom_toTopOf="@id/edtHospitalCode"
+            app:layout_constraintEnd_toStartOf="@id/frameToDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtInsuranceCode">
+
+            <ImageView
+                android:id="@+id/imgFromDate"
+                android:layout_width="@dimen/edt_height"
+                android:layout_height="@dimen/edt_height"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/radius_blue_right"
+                android:contentDescription="@string/img_des"
+                android:src="@drawable/ic_expand_more" />
+
+            <phuthotech.vn.hospital.custom.MyEditText
+                android:id="@+id/edtFromDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_toStartOf="@id/imgFromDate"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="date"
+                android:hint="@string/txt_date_from"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:textSize="@dimen/sp_22" />
+
+        </RelativeLayout>
+
+        <!--To Date-->
+        <RelativeLayout
+            android:id="@+id/frameToDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_6"
+            android:elevation="@dimen/dp_2"
+            android:background="@drawable/radius_white"
+            app:layout_constraintBottom_toBottomOf="@id/frameFromDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/frameFromDate"
+            app:layout_constraintTop_toTopOf="@id/frameFromDate">
+
+            <ImageView
+                android:id="@+id/imgToDate"
+                android:layout_width="@dimen/edt_height"
+                android:layout_height="@dimen/edt_height"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/radius_blue_right"
+                android:contentDescription="@string/img_des"
+                android:src="@drawable/ic_expand_more" />
+
+            <phuthotech.vn.hospital.custom.MyEditText
+                android:id="@+id/edtToDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_toStartOf="@id/imgToDate"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="date"
+                android:hint="@string/txt_date_to"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:textSize="@dimen/sp_22" />
+
+        </RelativeLayout>
+
+
+        <!--Hospital Code-->
+        <phuthotech.vn.hospital.custom.MyEditText
+            android:id="@+id/edtHospitalCode"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edt_height"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@drawable/radius_white"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22"
+            android:elevation="@dimen/dp_2"
+            android:hint="@string/txt_hospital_code"
+            app:layout_constraintBottom_toTopOf="@id/frameHospitalName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frameFromDate" />
+
+
+        <!--Hospital Name-->
+        <RelativeLayout
+            android:id="@+id/frameHospitalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_6"
+            android:elevation="@dimen/dp_2"
+            android:background="@drawable/radius_white"
+            app:layout_constraintBottom_toTopOf="@id/edtAddressInsurance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtHospitalCode">
+
+            <ImageView
+                android:id="@+id/imgHospitalName"
+                android:layout_width="@dimen/edt_height"
+                android:layout_height="@dimen/edt_height"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/radius_blue_right"
+                android:contentDescription="@string/img_des"
+                android:src="@drawable/ic_expand_more" />
+
+            <phuthotech.vn.hospital.custom.MyAutoCompleteTextView
+                android:id="@+id/edtHospitalName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_toStartOf="@id/imgHospitalName"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:completionThreshold="1"
+                android:hint="@string/txt_hospital_name"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:textSize="@dimen/sp_22" />
+
+        </RelativeLayout>
+
+        <!--Address Insurance-->
+        <phuthotech.vn.hospital.custom.MyEditText
+            android:id="@+id/edtAddressInsurance"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edt_height"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@drawable/radius_white"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22"
+            android:elevation="@dimen/dp_2"
+            android:hint="@string/txt_health_insurance_address"
+            app:layout_constraintBottom_toTopOf="@id/frameInsuredCode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frameHospitalName" />
+
+        <!--Insured Code-->
+        <RelativeLayout
+            android:id="@+id/frameInsuredCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_6"
+            android:elevation="@dimen/dp_2"
+            android:background="@drawable/radius_white"
+            app:layout_constraintBottom_toTopOf="@id/frameOverTime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtAddressInsurance">
+
+            <ImageView
+                android:id="@+id/imgInsuredCode"
+                android:layout_width="@dimen/edt_height"
+                android:layout_height="@dimen/edt_height"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/radius_blue_right"
+                android:contentDescription="@string/img_des"
+                android:src="@drawable/ic_expand_more" />
+
+            <phuthotech.vn.hospital.custom.MyAutoCompleteTextView
+                android:id="@+id/edtInsuredCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_toStartOf="@id/imgInsuredCode"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:hint="@string/txt_health_insured_address"
+                android:completionThreshold="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:textSize="@dimen/sp_22" />
+
+        </RelativeLayout>
+
+        <!--Over Time-->
+        <RelativeLayout
+            android:id="@+id/frameOverTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_6"
+            android:elevation="@dimen/dp_2"
+            android:background="@drawable/radius_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frameInsuredCode">
+
+            <ImageView
+                android:id="@+id/imgOverTime"
+                android:layout_width="@dimen/edt_height"
+                android:layout_height="@dimen/edt_height"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/radius_blue_right"
+                android:contentDescription="@string/img_des"
+                android:src="@drawable/ic_expand_more" />
+
+            <phuthotech.vn.hospital.custom.MyEditText
+                android:id="@+id/edtOverTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_toStartOf="@id/imgOverTime"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:hint="@string/txt_time_over_5year"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:textSize="@dimen/sp_22" />
+
+        </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

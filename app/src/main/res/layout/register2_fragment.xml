@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_16">
+
+    <RelativeLayout
+        android:id="@+id/framePurpose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/radius_white"
+        android:elevation="@dimen/dp_2"
+        app:layout_constraintBottom_toTopOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@id/imgFind"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgPurpose"
+            android:layout_width="@dimen/edt_height"
+            android:layout_height="@dimen/edt_height"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/img_des"
+            android:padding="@dimen/dp_4"
+            android:background="@drawable/radius_blue_right"
+            android:src="@drawable/ic_expand_more" />
+
+        <phuthotech.vn.hospital.custom.MyAutoCompleteTextView
+            android:id="@+id/edtPurpose"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_toStartOf="@id/imgPurpose"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:completionThreshold="1"
+            android:hint="@string/txt_purpose"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frameFormality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/radius_white"
+        android:elevation="@dimen/dp_2"
+        app:layout_constraintBottom_toTopOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@id/imgFind"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgFormality"
+            android:layout_width="@dimen/edt_height"
+            android:layout_height="@dimen/edt_height"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/img_des"
+            android:padding="@dimen/dp_4"
+            android:background="@drawable/radius_blue_right"
+            android:src="@drawable/ic_expand_more" />
+
+        <phuthotech.vn.hospital.custom.MyAutoCompleteTextView
+            android:id="@+id/edtFormality"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_toStartOf="@id/imgFormality"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_formality"
+            android:inputType="text"
+            android:completionThreshold="1"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frameReceive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/radius_white"
+        android:elevation="@dimen/dp_2"
+        app:layout_constraintBottom_toTopOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@id/imgFind"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgReceive"
+            android:layout_width="@dimen/edt_height"
+            android:layout_height="@dimen/edt_height"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/img_des"
+            android:padding="@dimen/dp_4"
+            android:background="@drawable/radius_blue_right"
+            android:src="@drawable/ic_expand_more" />
+
+        <phuthotech.vn.hospital.custom.MyAutoCompleteTextView
+            android:id="@+id/edtReceive"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_toStartOf="@id/imgReceive"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_receive"
+            android:inputType="text"
+            android:completionThreshold="1"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frameObject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/radius_white"
+        android:elevation="@dimen/dp_2"
+        app:layout_constraintBottom_toTopOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@id/imgFind"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgObject"
+            android:layout_width="@dimen/edt_height"
+            android:layout_height="@dimen/edt_height"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/img_des"
+            android:padding="@dimen/dp_4"
+            android:background="@drawable/radius_blue_right"
+            android:src="@drawable/ic_expand_more" />
+
+        <phuthotech.vn.hospital.custom.MyAutoCompleteTextView
+            android:id="@+id/edtObject"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_toStartOf="@id/imgObject"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_sick_object"
+            android:completionThreshold="1"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frameCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/radius_white"
+        android:elevation="@dimen/dp_2"
+        app:layout_constraintBottom_toTopOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@id/imgFind"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgCost"
+            android:layout_width="@dimen/edt_height"
+            android:layout_height="@dimen/edt_height"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/img_des"
+            android:padding="@dimen/dp_4"
+            android:background="@drawable/radius_blue_right"
+            android:src="@drawable/ic_expand_more" />
+
+        <phuthotech.vn.hospital.custom.MyAutoCompleteTextView
+            android:id="@+id/edtCost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_toStartOf="@id/imgCost"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_cost"
+            android:completionThreshold="1"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frameDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/radius_white"
+        android:elevation="@dimen/dp_2"
+        app:layout_constraintBottom_toTopOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@id/imgFind"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgDiscount"
+            android:layout_width="@dimen/edt_height"
+            android:layout_height="@dimen/edt_height"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/img_des"
+            android:padding="@dimen/dp_4"
+            android:background="@drawable/radius_blue_right"
+            android:src="@drawable/ic_expand_more" />
+
+        <phuthotech.vn.hospital.custom.MyAutoCompleteTextView
+            android:id="@+id/edtDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_toStartOf="@id/imgDiscount"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_discount"
+            android:inputType="text"
+            android:completionThreshold="1"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22" />
+
+    </RelativeLayout>
+
+</LinearLayout>

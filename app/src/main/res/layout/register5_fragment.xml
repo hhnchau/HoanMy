@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_16">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_6"
+        android:background="@drawable/radius_white"
+        android:elevation="@dimen/dp_2">
+
+        <ImageView
+            android:id="@+id/imgPrivateCard"
+            android:layout_width="@dimen/edt_height"
+            android:layout_height="@dimen/edt_height"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/radius_blue_right"
+            android:contentDescription="@string/img_des"
+            android:src="@drawable/ic_expand_more" />
+
+        <phuthotech.vn.hospital.custom.MyEditText
+            android:id="@+id/edtPrivateCard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_toStartOf="@id/imgOverTime"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_card_select"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/dp_4"/>
+
+
+</LinearLayout>

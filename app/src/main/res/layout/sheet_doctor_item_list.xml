@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvSn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_doctor_name"
+        app:layout_constraintHorizontal_weight="1.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvName"
+        android:textSize="@dimen/sp_16"
+        android:padding="@dimen/dp_6"
+        android:textColor="@color/bk"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_working_day"
+        app:layout_constraintHorizontal_weight="1.2"
+        app:layout_constraintTop_toTopOf="@id/tvSn"
+        app:layout_constraintBottom_toBottomOf="@id/tvSn"
+        app:layout_constraintStart_toEndOf="@id/tvSn"
+        app:layout_constraintEnd_toStartOf="@id/tvAddress"
+        android:textSize="@dimen/sp_16"
+        android:padding="@dimen/dp_6"
+        android:textColor="@color/bk"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_department"
+        app:layout_constraintHorizontal_weight="1.2"
+        app:layout_constraintTop_toTopOf="@id/tvSn"
+        app:layout_constraintBottom_toBottomOf="@id/tvSn"
+        app:layout_constraintStart_toEndOf="@id/tvName"
+        app:layout_constraintEnd_toStartOf="@id/tvGender"
+        android:textSize="@dimen/sp_16"
+        android:padding="@dimen/dp_6"
+        android:textColor="@color/bk"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_note"
+        app:layout_constraintHorizontal_weight="1.5"
+        app:layout_constraintTop_toTopOf="@id/tvSn"
+        app:layout_constraintBottom_toBottomOf="@id/tvSn"
+        app:layout_constraintStart_toEndOf="@id/tvAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/sp_16"
+        android:padding="@dimen/dp_6"
+        android:textColor="@color/bk"
+        android:maxLines="1"/>
+
+</android.support.constraint.ConstraintLayout>

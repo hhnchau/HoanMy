@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_16">
+
+    <RelativeLayout
+        android:id="@+id/frameRecommendDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/radius_white"
+        android:elevation="@dimen/dp_2"
+        app:layout_constraintBottom_toTopOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@id/imgFind"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgRecommendDoctor"
+            android:layout_width="@dimen/edt_height"
+            android:layout_height="@dimen/edt_height"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/img_des"
+            android:padding="@dimen/dp_4"
+            android:background="@drawable/radius_blue_right"
+            android:src="@drawable/ic_expand_more" />
+
+        <phuthotech.vn.hospital.custom.MyEditText
+            android:id="@+id/edtRecommendDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_toStartOf="@id/imgRecommendDoctor"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_recommend_doctor"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frameRecommendPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/radius_white"
+        android:elevation="@dimen/dp_2"
+        app:layout_constraintBottom_toTopOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@id/imgFind"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgRecommendPlace"
+            android:layout_width="@dimen/edt_height"
+            android:layout_height="@dimen/edt_height"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/img_des"
+            android:padding="@dimen/dp_4"
+            android:background="@drawable/radius_blue_right"
+            android:src="@drawable/ic_expand_more" />
+
+        <phuthotech.vn.hospital.custom.MyEditText
+            android:id="@+id/edtRecommendPlace"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_toStartOf="@id/imgRecommendPlace"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_recommend_place"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frameEmployeeCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/radius_white"
+        android:elevation="@dimen/dp_2"
+        app:layout_constraintBottom_toTopOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@id/imgFind"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgEmployeeCode"
+            android:layout_width="@dimen/edt_height"
+            android:layout_height="@dimen/edt_height"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/img_des"
+            android:padding="@dimen/dp_4"
+            android:background="@drawable/radius_blue_right"
+            android:src="@drawable/ic_expand_more" />
+
+        <phuthotech.vn.hospital.custom.MyEditText
+            android:id="@+id/edtEmployeeCode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_toStartOf="@id/imgEmployeeCode"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_employee_code"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frameObject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/radius_white"
+        android:elevation="@dimen/dp_2"
+        app:layout_constraintBottom_toTopOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@id/imgFind"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgObject"
+            android:layout_width="@dimen/edt_height"
+            android:layout_height="@dimen/edt_height"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/img_des"
+            android:padding="@dimen/dp_4"
+            android:background="@drawable/radius_blue_right"
+            android:src="@drawable/ic_expand_more" />
+
+        <phuthotech.vn.hospital.custom.MyEditText
+            android:id="@+id/edtObject"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_toStartOf="@id/imgFormality"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_object"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frameRelationShip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/radius_white"
+        android:elevation="@dimen/dp_2"
+        app:layout_constraintBottom_toTopOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@id/imgFind"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgRelationShip"
+            android:layout_width="@dimen/edt_height"
+            android:layout_height="@dimen/edt_height"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/img_des"
+            android:padding="@dimen/dp_4"
+            android:background="@drawable/radius_blue_right"
+            android:src="@drawable/ic_expand_more" />
+
+        <phuthotech.vn.hospital.custom.MyEditText
+            android:id="@+id/edtPurpose"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_toStartOf="@id/imgPurpose"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_relationship"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:textSize="@dimen/sp_22" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

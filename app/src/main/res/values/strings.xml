@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Hoàn Mỹ</string>
+
+    <string name="img_des"/>
+
+    <string name="txt_patient_info">Thông tin bệnh nhân</string>
+    <string name="txt_patient_id">Mã bệnh nhân</string>
+    <string name="txt_patient_name">Họ và tên</string>
+    <string name="txt_sex">Giới tính</string>
+    <string name="txt_male">Nam</string>
+    <string name="txt_female">Nữ</string>
+    <string name="txt_birthday">Ngày sinh</string>
+    <string name="txt_phone">Điện thoại</string>
+    <string name="txt_address">Địa chỉ</string>
+
+    <string name="txt_nationality">Quốc tịch</string>
+    <string name="txt_nation">Dân tộc</string>
+    <string name="txt_job">Nghề nghiệp</string>
+    <string name="txt_city">Tỉnh thành</string>
+    <string name="txt_district">Quận huyện</string>
+    <string name="txt_ward">Phường xã</string>
+
+    <string name="txt_identity_card">CMND</string>
+    <string name="txt_passport">Passport</string>
+    <string name="txt_street">Số nhà, đường</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_parent_name">Họ tên (Bố/Mẹ)</string>
+    <string name="txt_parent_identity_card">CMND (Bố/Mẹ)</string>
+
+    <string name="txt_health_insurance">Bảo hiểm y tế</string>
+
+    <string name="txt_heath_insurance_number">Số thẻ BHYT</string>
+    <string name="txt_date_from">Từ ngày</string>
+    <string name="txt_date_to">Đến ngày</string>
+    <string name="txt_hospital_code">Mã bệnh viện</string>
+    <string name="txt_hospital_name">Tên bệnh viện</string>
+    <string name="txt_health_insurance_address">Địa chỉ thẻ BHYT</string>
+    <string name="txt_health_insured_address">Mã nơi đối tượng sinh sống</string>
+    <string name="txt_time_over_5year">Thời gian 5 năm liên tục</string>
+
+    <string name="txt_private_insurance">Bảo hiểm tư nhân</string>
+    <string name="txt_private_insurance_number">Số thẻ BHTN</string>
+    <string name="txt_private_insurance_name">Tên công ty BH</string>
+    <string name="txt_company_insured">Tên cty mua BH</string>
+    <string name="txt_private_insured_address">Địa chỉ cty mua BH</string>
+
+    <string name="btn_qr">Quét QR</string>
+    <string name="btn_save">Lưu</string>
+    <string name="btn_close">Đóng</string>
+    <string name="btn_ok">OK</string>
+
+    <string name="tab_info">Thông tin</string>
+    <string name="tab_health_insurance">BHYT</string>
+    <string name="tab_private_insurance">BHTN</string>
+
+    <string name="screen_dashboard">Dashboard</string>
+    <string name="screen_add_new">Thêm mới</string>
+    <string name="screen_history">Lịch sử</string>
+    <string name="screen_register">Đăng ký</string>
+
+    <string name="lb_name">Họ và tên: </string>
+    <string name="lb_birthday">Năm sinh: </string>
+    <string name="lb_gender">Năm sinh: </string>
+    <string name="lb_phone">Điện thoại: </string>
+    <string name="lb_address">Địa chỉ: </string>
+
+
+    <string name="alert_ok">Lưu thông tin thành công!</string>
+
+    <string name="txt_doctor_name">Tên bác sĩ</string>
+    <string name="txt_working_day">Ngày làm việc</string>
+    <string name="txt_department">Khoa phòng</string>
+    <string name="txt_note">Ghi chú</string>
+    <string name="txt_detail">Chi tiết</string>
+    <string name="txt_edit">Chỉnh sửa</string>
+    <string name="txt_card_select">Chọn thẻ</string>
+
+    <string name="txt_purpose">Mục đích</string>
+    <string name="txt_formality">Hình thức</string>
+    <string name="txt_receive">Loại tiếp nhận</string>
+    <string name="txt_sick_object">Đối tượng khám</string>
+    <string name="txt_cost">Loại giá</string>
+    <string name="txt_discount">Chiết khấu</string>
+    <string name="txt_symptom">Triệu chứng</string>
+    <string name="txt_room_service">DV phân phòng</string>
+    <string name="txt_room">Phòng phân vào</string>
+    <string name="txt_recommend_doctor">Bác sĩ giới thiệu</string>
+    <string name="txt_recommend_place">Bác sĩ giới thiệu</string>
+    <string name="txt_employee_code">Mã nhân viên</string>
+    <string name="txt_object">Đối tượng</string>
+    <string name="txt_relationship">Mối quan hệ</string>
+    <string name="txt_doctor_list">Danh sách BS</string>
+    <string name="txt_select">Chọn</string>
+    <string name="txt_service_name">Tên dịch vụ</string>
+    <string name="txt_unit">Đơn vị</string>
+    <string name="txt_price">Đơn giá</string>
+
+    <string name="toast_sn_empty">Vui lòng nhập mã bệnh nhân</string>
+
+
+
+    <string name="html_detail"><![CDATA[
+        <html>
+            <head></head>
+                <body style="line-height:2.0;">
+
+                    <i style="font-size:16px;">Mã bệnh nhân:</i> <a st"font-size:20px;"><a style="color:#4285f4;">%1$s</a></a>
+
+                    <br>
+                    <i style="font-size:16px;">Họ và tên:</i> <a style="font-size:20px;"><b style="color:#4285f4;">%2$s</b></a>
+
+                    <br>
+                    <i style="font-size:16px;">Giới tính &nbsp;:</i> <a style="font-size:20px;"><a style="color:#4285f4;">%3$s</a></a>
+
+                    <br>
+                    <i style="font-size:16px;">Ngày sinh &nbsp;:</i> <a style="font-size:20px;"><a style="color:#4285f4;">%4$s</a></a>
+
+                    <br>
+                    <i style="font-size:16px;">Số CMND &nbsp;:</i> <a style="font-size:20px;"><a style="color:#4285f4;">%5$s</a></a>
+
+                    <br>
+                    <i style="font-size:16px;">Địa chỉ &nbsp;:</i> <a style="font-size:20px;"><a style="color:#4285f4;">%6$s</a></a>
+
+                </body>
+        </html>
+    ]]></string>
+
+
+</resources>

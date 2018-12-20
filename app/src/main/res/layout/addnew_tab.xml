@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainColor">
+
+    <RelativeLayout
+        android:id="@+id/tab1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgPatientInfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="@dimen/dp_4"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/img_des" />
+
+        <TextView
+            android:id="@+id/tvPatientInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgPatientInfo"
+            android:gravity="center"
+            android:text="@string/tab_info"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/bg"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_12"/>
+
+    <RelativeLayout
+        android:id="@+id/tab2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgHealthInsurance"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="@dimen/dp_4"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/img_des" />
+
+        <TextView
+            android:id="@+id/tvHealthInsurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgHealthInsurance"
+            android:gravity="center"
+            android:textColor="@color/bg"
+            android:text="@string/tab_health_insurance"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_12"/>
+
+    <RelativeLayout
+        android:id="@+id/tab3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgPrivateInsurance"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="@dimen/dp_4"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/img_des" />
+
+        <TextView
+            android:id="@+id/tvPrivateInsurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgPrivateInsurance"
+            android:gravity="center"
+            android:textColor="@color/bg"
+            android:text="@string/tab_private_insurance"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

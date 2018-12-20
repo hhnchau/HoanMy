@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="fab1">#FF4081</color>
+    <color name="fab2">#4caf50</color>
+    <color name="fab3">#ff9800</color>
+
+    <color name="mainColor">#4285f4</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_40">#40000000</color>
+
+    <!--<color name="bg">#e5ebef</color>-->
+    <color name="bg">#b9b9b9</color>
+    <color name="bg_text">#455461</color>
+
+    <color name="wh">#ffffff</color>
+    <color name="bk">#000000</color>
+    <color name="bk_85p">#C5000000</color>
+    <color name="bk_50p">#80000000</color>
+    <color name="bk_40p">#40000000</color>
+
+    <color name="org">#ff6400</color>
+
+    <color name="blue">#0078f1</color>
+
+    <color name="green">#5EA477</color>
+
+    <color name="red">#f50404</color>
+
+
+    <color name="dashboard_frame1">#00bcd4</color>
+    <color name="dashboard_frame2">#7bc228</color>
+    <color name="dashboard_frame3">#ff9800</color>
+    <color name="dashboard_frame4">#fb6d9d</color>
+    <color name="dashboard_black">#757575</color>
+    <color name="dashboard_text">#212121</color>
+
+</resources>

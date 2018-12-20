@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="2:0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintVertical_bias="1">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_8"
+                app:cardElevation="@dimen/dp_4"
+                app:cardCornerRadius="@dimen/dp_4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/cvName"
+                app:layout_constraintEnd_toStartOf="@id/cvGender">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/dp_2">
+
+                    <ImageView
+                        android:id="@+id/img11"
+                        android:layout_width="@dimen/edt_height_find"
+                        android:layout_height="@dimen/edt_height_find"
+                        android:padding="@dimen/dp_4"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/img_des"
+                        android:src="@drawable/ic_search"
+                        android:visibility="gone"/>
+
+                    <phuthotech.vn.hospital.custom.MyEditText
+                        android:id="@+id/edtSn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height_find"
+                        android:layout_toStartOf="@id/img11"
+                        android:background="@color/transparent"
+                        android:completionThreshold="1"
+                        android:gravity="center_vertical"
+                        android:hint="@string/txt_patient_id"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_8"
+                        android:textSize="@dimen/sp_16" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                app:cardElevation="@dimen/dp_4"
+                app:cardCornerRadius="@dimen/dp_4"
+                app:layout_constraintTop_toBottomOf="@id/cvSn"
+                app:layout_constraintStart_toStartOf="@id/cvSn"
+                app:layout_constraintEnd_toEndOf="@id/cvSn"
+                app:layout_constraintBottom_toTopOf="@id/cvAddress">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/dp_2">
+
+                    <ImageView
+                        android:id="@+id/img22"
+                        android:layout_width="@dimen/edt_height_find"
+                        android:layout_height="@dimen/edt_height_find"
+                        android:padding="@dimen/dp_4"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/img_des"
+                        android:src="@drawable/ic_search"
+                        android:visibility="gone"/>
+
+                    <phuthotech.vn.hospital.custom.MyEditText
+                        android:id="@+id/edtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height_find"
+                        android:layout_toStartOf="@id/img22"
+                        android:background="@color/transparent"
+                        android:completionThreshold="1"
+                        android:gravity="center_vertical"
+                        android:hint="@string/txt_patient_name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_8"
+                        android:textSize="@dimen/sp_16" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_8"
+                app:cardElevation="@dimen/dp_4"
+                app:cardCornerRadius="@dimen/dp_4"
+                app:layout_constraintTop_toBottomOf="@id/cvName"
+                app:layout_constraintStart_toStartOf="@id/cvSn"
+                app:layout_constraintEnd_toEndOf="@id/cvSn"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/dp_2">
+
+                    <ImageView
+                        android:id="@+id/img33"
+                        android:layout_width="@dimen/edt_height_find"
+                        android:layout_height="@dimen/edt_height_find"
+                        android:padding="@dimen/dp_4"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/img_des"
+                        android:src="@drawable/ic_search"
+                        android:visibility="gone"/>
+
+                    <phuthotech.vn.hospital.custom.MyEditText
+                        android:id="@+id/edtAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height_find"
+                        android:layout_toStartOf="@id/img33"
+                        android:background="@color/transparent"
+                        android:completionThreshold="1"
+                        android:gravity="center_vertical"
+                        android:hint="@string/txt_address"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_8"
+                        android:textSize="@dimen/sp_16" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_8"
+                app:cardElevation="@dimen/dp_4"
+                app:cardCornerRadius="@dimen/dp_4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cvSn"
+                app:layout_constraintBottom_toTopOf="@id/cvBirthday"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/dp_2">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="@dimen/edt_height_find"
+                        android:layout_height="@dimen/edt_height_find"
+                        android:padding="@dimen/dp_4"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/img_des"
+                        android:src="@drawable/ic_search"
+                        android:visibility="gone"/>
+
+                    <phuthotech.vn.hospital.custom.MyEditText
+                        android:id="@+id/edtGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height_find"
+                        android:layout_toStartOf="@id/img"
+                        android:background="@color/transparent"
+                        android:completionThreshold="1"
+                        android:gravity="center_vertical"
+                        android:hint="@string/txt_sex"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_8"
+                        android:textSize="@dimen/sp_16" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvBirthday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                app:cardElevation="@dimen/dp_4"
+                app:cardCornerRadius="@dimen/dp_4"
+                app:layout_constraintTop_toBottomOf="@id/cvGender"
+                app:layout_constraintStart_toStartOf="@id/cvGender"
+                app:layout_constraintEnd_toEndOf="@id/cvGender"
+                app:layout_constraintBottom_toTopOf="@id/cvIdentity">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/dp_2">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="@dimen/edt_height_find"
+                        android:layout_height="@dimen/edt_height_find"
+                        android:padding="@dimen/dp_4"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/img_des"
+                        android:src="@drawable/ic_search"
+                        android:visibility="gone"/>
+
+                    <phuthotech.vn.hospital.custom.MyEditText
+                        android:id="@+id/edtBirthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height_find"
+                        android:layout_toStartOf="@id/img2"
+                        android:background="@color/transparent"
+                        android:completionThreshold="1"
+                        android:gravity="center_vertical"
+                        android:hint="@string/txt_birthday"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_8"
+                        android:textSize="@dimen/sp_16" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvIdentity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_8"
+                app:cardElevation="@dimen/dp_4"
+                app:cardCornerRadius="@dimen/dp_4"
+                app:layout_constraintTop_toBottomOf="@id/cvBirthday"
+                app:layout_constraintStart_toStartOf="@id/cvGender"
+                app:layout_constraintEnd_toEndOf="@id/cvGender"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/dp_2">
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="@dimen/edt_height_find"
+                        android:layout_height="@dimen/edt_height_find"
+                        android:padding="@dimen/dp_4"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/img_des"
+                        android:src="@drawable/ic_search"
+                        android:visibility="gone"/>
+
+                    <phuthotech.vn.hospital.custom.MyEditText
+                        android:id="@+id/edtIdentity"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height_find"
+                        android:layout_toStartOf="@id/img3"
+                        android:background="@color/transparent"
+                        android:completionThreshold="1"
+                        android:gravity="center_vertical"
+                        android:hint="@string/txt_identity_card"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_8"
+                        android:textSize="@dimen/sp_16" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <include
+            layout="@layout/sheet_patient_item_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginStart="@dimen/dp_8"/>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginStart="@dimen/dp_8"
+            android:background="@color/wh" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
